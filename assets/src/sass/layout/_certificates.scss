@@ -48,13 +48,22 @@
 
     &__name{
         font-size: 2.1rem;
-        color: #000;
+        color: v.$primary;
         font-weight: 600;
     }
 
     &__date{
         color: #000;
         font-weight: 300;
+    }
+
+    &__link{
+        color: v.$primary !important;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 

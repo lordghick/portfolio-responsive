@@ -11,7 +11,6 @@ html {
   /* 1rem = 10px */
   font-size: 62.5%;
   scroll-behavior: smooth;
-
 }
 
 *,
@@ -22,34 +21,38 @@ html {
 
 body {
   font-size: 1.6rem;
-
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 
-    &:visited{
-      color: inherit;
-    }
+  &:visited {
+    color: inherit;
+  }
 
 }
 
-.container{
+.container {
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
 }
 
-.section{
+.section {
   padding: 5rem 0;
 }
 
-h1, h2, h3, h4, h5 , h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
 
-p{
+p {
   margin: 0;
   padding: 0;
 }
@@ -57,14 +60,14 @@ p{
 progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
-   appearance: none;
+  appearance: none;
 }
 
 ::-webkit-progress-bar {
   background-color: v.$gris;
 }
 
-::-webkit-progress-value{
+::-webkit-progress-value {
   background-color: v.$primary;
 }
 
@@ -80,8 +83,10 @@ button {
   line-height: normal;
   overflow: visible;
   padding: 0;
-  -webkit-user-select: none; /* for button */
-   -webkit-appearance: button; /* for input */
-     -moz-user-select: none;
-      -ms-user-select: none;
+  -webkit-user-select: none;
+  /* for button */
+  -webkit-appearance: button;
+  /* for input */
+  -moz-user-select: none;
+  -ms-user-select: none;
 }

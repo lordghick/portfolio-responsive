@@ -349,7 +349,12 @@ a:visited {
   padding: 5rem 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -386,8 +391,10 @@ button {
   line-height: normal;
   overflow: visible;
   padding: 0;
-  -webkit-user-select: none; /* for button */
-  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -webkit-appearance: button;
+  /* for input */
   -moz-user-select: none;
   -ms-user-select: none;
 }
@@ -728,7 +735,7 @@ body {
   cursor: pointer;
 }
 .tarjeta__img {
-  width: 5rem;
+  width: 7rem;
 }
 .tarjeta__title {
   font-size: 2.4rem;
@@ -781,12 +788,20 @@ body {
 }
 .certificate__name {
   font-size: 2.1rem;
-  color: #000;
+  color: #0D6EFD;
   font-weight: 600;
 }
 .certificate__date {
   color: #000;
   font-weight: 300;
+}
+.certificate__link {
+  color: #0D6EFD !important;
+  font-weight: 600;
+  cursor: pointer;
+}
+.certificate__link:hover {
+  text-decoration: underline;
 }
 
 .columnContainer {
@@ -1166,7 +1181,7 @@ body {
   }
 }
 .footer__socialMediaContainer {
-  max-width: 20rem;
+  max-width: 15rem;
   height: 3rem;
   display: flex;
   flex-direction: row;
