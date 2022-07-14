@@ -1340,4 +1340,57 @@ body {
 .slideBtn {
   color: #ffffff;
   border: none;
+}
+
+/** Media Queries **/
+.modal {
+  background-color: #b1b1b1;
+  width: 100vw;
+  height: 100vh;
+}
+.modal__container {
+  background-color: #ffffff;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+  padding: 2rem;
+}
+.modal__img {
+  width: 20rem;
+}
+.modal__title, .modal__subTitle {
+  color: #0D6EFD;
+  align-self: start;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.modal__subTitle {
+  font-size: 2rem;
+}
+.modal__info {
+  line-height: 1.8;
+}
+.modal__lista {
+  list-style: none;
+  align-self: start;
+  padding: 0;
+  margin: 0;
+}
+.modal__lista :last-of-type {
+  margin-bottom: 0;
+}
+.modal__item {
+  margin-bottom: 2rem;
+}
+.modal__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2.4rem;
+  color: red;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
