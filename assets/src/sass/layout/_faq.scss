@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.faq{
+    @include m.desktop { 
+        background-image: url('/build/img/18915856.jpg');
+        background-repeat: no-repeat;
+        background-size:70rem;
+        background-position: right 10rem;
+     }
+
+    &__titleS{
+        font-size: 3.8rem;
+        margin-bottom: 5rem;
+    }
+
+    &__cards{
+        margin-bottom: 5rem;
+        @include m.desktop { 
+            width: 40%;
+         }
+    }
+
+    &__card{
+        padding-bottom: 1rem;
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid v.$grisClaro;
+            margin: 2rem 0;
+        }
+
+        &:last-child::after{
+            border: none;
+        }
+    }
+
+    &__title{
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+
+    &__icon{
+        margin-right: 1rem;
+        color: v.$primary;
+    }
+
+    &__text{
+        padding-left: 3rem;
+        line-height: 1.8;
+    }
+}

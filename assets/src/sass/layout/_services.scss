@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.services {
+    background-color: #F8F9FA;
+    padding: 5rem 0;
+
+    &__grid {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, minmax(210px, 1fr));
+        gap: 4rem;
+
+        @include m.tablet { 
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, minmax(210px, 1fr));
+         }
+
+         @include m.desktop { 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, minmax(210px, 1fr));
+            gap: 10rem;
+          }
+    }
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+    &__img {
+        width: 5rem;
+    }
+
+    &__title{
+        font-size: 2.4rem;
+    }
+
+    &__info{
+        line-height: 1.8;
+        text-align: justify;
+        color: v.$grisOscuro;
+    }
+}

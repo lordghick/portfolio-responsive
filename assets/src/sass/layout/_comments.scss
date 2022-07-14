@@ -1,0 +1,92 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.comments {
+    padding: 5rem 0;
+    background-color: v.$grisClaro;
+    display: flex;
+    flex-direction: row;
+
+    @include m.desktop { 
+        min-height: 80vh;
+     }
+    &__carrousel {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        &::-webkit-scrollbar {
+            display: none;
+        }  
+    }
+
+    &__slide{
+        @include m.desktop { 
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+            gap: 2rem;
+            flex-shrink: 0;
+         }
+    }
+
+    &__mb-5 {
+        color: v.$white;
+        margin-bottom: 5rem;
+    }
+
+    &__arrowsContainer {
+        display: none;
+    }
+
+    &__text {
+        font-size: 2.1rem;
+        color: v.$white;
+        line-height: 1.8;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        @include m.desktop { 
+            max-width: 60%;
+         }
+    }
+
+    &__box {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: v.$white;
+    }
+
+    &__pic {
+        display: block;
+        width: 6.5rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    &__subname{
+        color: #dee3e4;
+    }
+
+    &__nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+}
