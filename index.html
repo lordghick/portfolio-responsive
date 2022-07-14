@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/src/bootstrap/Bootstrap Icons/icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/build/css/main.css">
     <title>Portafolio</title>
@@ -36,7 +37,7 @@
         </nav>
 
         <div class="hero">
-            <div class="hero__info animate__animated animate__fadeInUpBig">
+            <div class="hero__info">
                 <p class="hero__text fw-600 hero__textBig">Hi, I'm a Freelancer
                 </p>
                 <h1 class="hero__job">Web Builder</h1>
@@ -46,7 +47,8 @@
         </div>
     </header>
 
-    <section class="aboutMe container" id="about">
+    <section class="aboutMe container" id="about" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="sectionContainer">
             <p class="sectionName">About me</p>
             <h3 class="sectionTitle fw-600 m-0">Know Me More</h3>
@@ -86,7 +88,8 @@
         </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="services" id="services" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="container centrar">
             <div class="sectionContainer">
                 <p class="sectionName text-alignC">What I do?</p>
@@ -135,7 +138,8 @@
 
     </section>
 
-    <section class="certificates container" id="certificates">
+    <section class="certificates container" id="certificates" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="sectionContainer">
             <p class="sectionName text-alignC">Certificates</p>
             <h3 class="sectionTitle text-alignC fw-600">A summary of My Certificates</h3>
@@ -272,7 +276,8 @@
 
     </section>
 
-    <main class="portfolio" id="portfolio">
+    <main class="portfolio" id="portfolio" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="container">
             <div class="sectionContainer">
                 <p class="sectionName text-alignC">Portfolio</p>
@@ -291,22 +296,22 @@
 
         <div class="portfolio__grid container">
             <div class="portfolio__gridBox">
-                
+
             </div>
             <div class="portfolio__gridBox">
-                
+
             </div>
             <div class="portfolio__gridBox">
-                
+
             </div>
             <div class="portfolio__gridBox">
-                
+
             </div>
             <div class="portfolio__gridBox">
-                
+
             </div>
             <div class="portfolio__gridBox">
-                
+
             </div>
         </div>
 
@@ -319,7 +324,8 @@
         </div>
     </section>
 
-    <section class="faq container" id="faq">
+    <section class="faq container" id="faq" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="sectionContainer">
             <p class="sectionName text-alignC">FAQ</p>
             <h3 class="sectionTitle text-alignC fw-600 faq__titleS">Have any questions?</h3>
@@ -368,7 +374,8 @@
         </div>
     </section>
 
-    <section class="comments" id="comments">
+    <section class="comments" id="comments" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         <div class="container comments__container">
             <div class="sectionContainer">
                 <p class="sectionName text-alignC">Client Speak</p>
@@ -468,6 +475,12 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:3000        
+        });
+    </script>
     <script src="/build/js/scripts.js"></script>
 </body>
 
