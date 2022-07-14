@@ -602,9 +602,15 @@ body {
 }
 .nav__linkContainer {
   color: #ffffff;
+  gap: 1rem;
 }
 .nav__link {
   color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.nav__link:hover {
+  color: #b1b1b1;
 }
 
 /** Media Queries **/
@@ -714,6 +720,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   gap: 2rem;
+  cursor: pointer;
 }
 .tarjeta__img {
   width: 5rem;
@@ -891,6 +898,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
+  transition: all 0.3ms ease;
+  -webkit-transition: all 0.3ms ease;
+  -moz-transition: all 0.3ms ease;
+  -ms-transition: all 0.3ms ease;
+  -o-transition: all 0.3ms ease;
+  cursor: pointer;
+}
+.portfolio__gridBox:hover {
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000000, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 0.8;
 }
 .portfolio__gridBox:nth-child(1) {
   background-image: url(/build/img/Portafolio__Guitarra.png);
@@ -1012,14 +1033,19 @@ body {
   }
 }
 .comments__carrousel {
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  width: 100%;
+  overflow: hidden;
   overflow-x: scroll;
   scroll-behavior: smooth;
+  flex-direction: row;
 }
 .comments__carrousel::-webkit-scrollbar {
   display: none;
+}
+.comments__slide {
+  width: 100%;
 }
 @media (min-width: 1024px) {
   .comments__slide {
@@ -1146,6 +1172,15 @@ body {
 .footer__socialMediaLink {
   font-size: 2.1rem;
   color: #ffffff;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+}
+.footer__socialMediaLink:hover {
+  color: #b1b1b1;
+  font-size: 2.4rem;
 }
 .footer__copy {
   background-color: #000000;
@@ -1280,4 +1315,9 @@ body {
 .progress__btn:hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+.slideBtn {
+  color: #ffffff;
+  border: none;
 }/*# sourceMappingURL=main.css.map */

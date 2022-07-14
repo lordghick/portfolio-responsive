@@ -55,6 +55,22 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center right;
+        transition: all .3ms ease;
+        -webkit-transition: all .3ms ease;
+        -moz-transition: all .3ms ease;
+        -ms-transition: all .3ms ease;
+        -o-transition: all .3ms ease;
+        cursor: pointer;
+
+        &:hover {
+            background: #000000;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #000000, #000000);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #000000, #000000);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            opacity: 0.8;
+        }
 
         &:nth-child(1) {
             background-image: url(/build/img/Portafolio__Guitarra.png);
@@ -81,8 +97,7 @@
             background-image: url(/build/img/Portafolio__TechPro.png);
             background-position: center center;
         }
+
+
     }
-
-
-
 }

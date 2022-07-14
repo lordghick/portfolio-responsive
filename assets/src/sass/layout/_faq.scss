@@ -2,12 +2,12 @@
 @use '../abstracts/mixins' as m;
 
 .faq{
-    @include m.desktop { 
+    @include m.desktop {
         background-image: url('/build/img/18915856.jpg');
         background-repeat: no-repeat;
         background-size:70rem;
         background-position: right 10rem;
-     }
+}
 
     &__titleS{
         font-size: 3.8rem;
